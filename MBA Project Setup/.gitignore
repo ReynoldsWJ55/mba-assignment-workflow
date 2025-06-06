@@ -1,0 +1,31 @@
+# Environment variables (contains personal paths)
+.env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Personal MBA project directories (examples)
+assignment*/
+test-project/
