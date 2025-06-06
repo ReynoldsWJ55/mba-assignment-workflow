@@ -62,32 +62,33 @@ DEFAULT_WORK_DIR="/Users/yourname/Documents/MBA"
 
 ### Project Structure
 
-Each assignment creates a standardized directory structure optimized for the 6-agent workflow:
+Each assignment creates a standardized directory structure inside the MBA Assignment Workflow System folder:
 
 ```
-assignment01-ProjectName/
-├── 01-planning/
-│   ├── instructions.md          # Assignment requirements and specifications
-│   ├── CLAUDE.md               # Complete agent workflow prompts
-│   └── research-strategy.md     # Strategic research plan (requires user review)
-├── 02-sources/
-│   ├── search-links.md         # Direct and backup search URLs
-│   ├── academic/
-│   │   ├── files/              # Academic PDFs and papers
-│   │   └── analysis/           # Source summaries and evidence extraction
-│   └── industry/
-│       ├── files/              # Industry reports and company documents
-│       └── analysis/           # Professional source analysis
-├── 03-frameworks/
-│   ├── individual/             # Individual framework applications
-│   └── synthesis.md            # Integrated strategic analysis
-├── 04-writing/
-│   ├── draft.md                # Complete assignment draft
-│   ├── references.md           # APA 7th Edition citations
-│   ├── visuals/                # Charts, graphs, and data tables
-│   └── presentation.md         # Executive summary and key findings
-└── 05-final/
-    └── submission.md           # Final submission-ready document
+MBA Assignment Workflow System/
+└── assignment01-ProjectName/
+    ├── 01-planning/
+    │   ├── instructions.md          # Assignment requirements and specifications
+    │   ├── CLAUDE.md               # Complete agent workflow prompts
+    │   └── research-strategy.md     # Strategic research plan (requires user review)
+    ├── 02-sources/
+    │   ├── search-links.md         # Direct and backup search URLs
+    │   ├── academic/
+    │   │   ├── files/              # Academic PDFs and papers
+    │   │   └── analysis/           # Source summaries and evidence extraction
+    │   └── industry/
+    │       ├── files/              # Industry reports and company documents
+    │       └── analysis/           # Professional source analysis
+    ├── 03-frameworks/
+    │   ├── individual/             # Individual framework applications
+    │   └── synthesis.md            # Integrated strategic analysis
+    ├── 04-writing/
+    │   ├── draft.md                # Complete assignment draft
+    │   ├── references.md           # APA 7th Edition citations
+    │   ├── visuals/                # Charts, graphs, and data tables
+    │   └── presentation.md         # Executive summary and key findings
+    └── 05-final/
+        └── submission.md           # Final submission-ready document
 ```
 
 ## Workflow Process

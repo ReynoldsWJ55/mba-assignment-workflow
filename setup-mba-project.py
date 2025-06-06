@@ -64,9 +64,12 @@ def create_project_structure(project_details):
     frameworks = project_details['frameworks']
     existing_folder = project_details['existing_folder']
     
-    # Create base project directory
+    # Create base project directory inside MBA Assignment Workflow System folder
     base_path = Path(existing_folder) if existing_folder != "." else Path.cwd()
-    project_dir = base_path / f"assignment{assignment_number}-{assignment_name}"
+    workflow_system_dir = base_path / "MBA Assignment Workflow System"
+    workflow_system_dir.mkdir(exist_ok=True)
+    
+    project_dir = workflow_system_dir / f"assignment{assignment_number}-{assignment_name}"
     project_dir.mkdir(exist_ok=True)
     
     # Define simplified folder structure
@@ -485,7 +488,8 @@ def main():
     
     project_dir = create_project_structure(project_details)
     
-    print(f"\\n✅ Project created: {project_dir}")
+    print(f"\\n✅ Project created in MBA Assignment Workflow System:")
+    print(f"📁 Location: {project_dir}")
     print(f"📁 Type: {assignment_type}")
     print(f"📁 Frameworks: {', '.join(frameworks)}")
     print(f"📅 Due: {due_date}")
@@ -505,14 +509,15 @@ def main():
             print("✅ Project opened in VS Code")
         except (subprocess.CalledProcessError, FileNotFoundError):
             print("❌ Could not open VS Code automatically")
-            print(f"Manual command: code {project_dir}")
+            print(f"Manual command: code '{project_dir}'")
     
     print("\\n📋 Next steps:")
     if not auto_open:
-        print("1. Open project folder in VS Code")
-        print("2. Edit 01-planning/instructions.md with assignment details")
-        print("3. Open 01-planning/CLAUDE.md for agent prompts")
-        print("4. Run AGENT 1 in Claude Code")
+        print("1. Navigate to your MBA Assignment Workflow System folder")
+        print("2. Open project folder in VS Code")
+        print("3. Edit 01-planning/instructions.md with assignment details")
+        print("4. Open 01-planning/CLAUDE.md for agent prompts")
+        print("5. Run AGENT 1 in Claude Code")
     else:
         print("1. Edit 01-planning/instructions.md with assignment details")
         print("2. Open 01-planning/CLAUDE.md for agent prompts")
